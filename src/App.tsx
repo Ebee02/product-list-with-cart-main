@@ -11,7 +11,9 @@ function App() {
         <h1 className="text-4xl font-bold text-custom-rose-900 mb-6">
           Desserts
         </h1>
-        {dessertDataElement}
+        <section className="grid grid-cols-1 gap-8">
+          {dessertDataElement}
+        </section>
       </main>
     </>
   );
