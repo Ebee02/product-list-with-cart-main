@@ -1,5 +1,6 @@
 import DessertItem from "./components/DessertItem";
 import dessertData from "../dessertData";
+import Cart from "./components/Cart";
 
 function App() {
   const dessertDataElement = dessertData.map((data) => {
@@ -13,6 +14,7 @@ function App() {
         </h1>
         <section className="grid grid-cols-1 gap-8">
           {dessertDataElement}
+          <Cart />
         </section>
       </main>
     </>
