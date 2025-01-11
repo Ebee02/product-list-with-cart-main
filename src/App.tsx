@@ -1,10 +1,10 @@
 import DessertItem from "./components/DessertItem";
 import dessertData from "../dessertData";
 import Cart from "./components/Cart";
-import { useState } from "react";
 
 function App() {
   const cartItem = 0;
+
   const dessertDataElement = dessertData.map((data) => {
     return <DessertItem key={data.name} {...data} />;
   });
