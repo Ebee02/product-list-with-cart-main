@@ -1,11 +1,14 @@
 import DessertItem from "./components/DessertItem";
 import dessertData from "../dessertData";
 import Cart from "./components/Cart";
+import { useState } from "react";
 
 function App() {
+  const [cartItem, setCartItem] = useState<number>(0);
   const dessertDataElement = dessertData.map((data) => {
     return <DessertItem key={data.name} {...data} />;
   });
+
   return (
     <>
       <main className="min-w-[svw] min-h-screen bg-custom-rose-50 p-6">
@@ -14,7 +17,7 @@ function App() {
         </h1>
         <section className="grid grid-cols-1 gap-8">
           {dessertDataElement}
-          <Cart />
+          <Cart cartItem={cartItem} />
         </section>
       </main>
     </>

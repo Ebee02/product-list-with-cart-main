@@ -14,7 +14,7 @@ const SelectedItemButton = () => {
     }
   }
   return (
-    <div className="duration-300 transition-all ease-in-out absolute -bottom-[25px] left-1/2 -translate-x-1/2 text-white flex items-center justify-between gap-3 bg-primary font-semibold rounded-full py-2 px-4 border border-custom-rose-400 shadow-sm text-sm cursor-pointer w-[140px]">
+    <div className="border-none shadow-sm duration-300 transition-all ease-in-out absolute -bottom-[25px] left-1/2 -translate-x-1/2 text-white flex items-center justify-between gap-3 bg-primary font-semibold rounded-full py-2 px-4 border-custom-rose-400 text-sm cursor-pointer w-[140px]">
       <button onClick={decrementAmount} className="text-xl">
         <CiCircleMinus />
       </button>

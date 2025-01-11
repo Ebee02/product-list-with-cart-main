@@ -1,7 +1,13 @@
-const Cart = () => {
+type CartProps = {
+  cartItem: number;
+};
+
+const Cart = (props: CartProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-5">
-      <h1 className="text-primary text-2xl font-bold mb-6">Your cart (0)</h1>
+      <h1 className="text-primary text-2xl font-bold mb-6">
+        Your cart ({props.cartItem})
+      </h1>
       <div className="flex flex-col items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -24,7 +24,11 @@ const DessertItem: FC<DessertItemDataType> = (props) => {
 
   return (
     <div>
-      <div className="relative border-none rounded-lg h-[220px] shadow-md w-full">
+      <div
+        className={`transiton-all duration-200 relative ${
+          isCartSelected ? "border-2 border-primary" : "border-none"
+        } rounded-lg h-[220px] w-full shadow-sm`}
+      >
         <img
           src={props.image.mobile}
           alt="lorem"
@@ -51,7 +55,9 @@ const DessertItem: FC<DessertItemDataType> = (props) => {
         <p className="text-lg font-semibold text-custom-rose-900">
           {props.name}
         </p>
-        <p className="text-primary font-medium text-lg">{props.price}</p>
+        <p className="text-primary font-medium text-lg">
+          {props.price.toFixed(2)}
+        </p>
       </div>
     </div>
   );
