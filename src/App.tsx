@@ -4,7 +4,7 @@ import Cart from "./components/Cart";
 import { useState } from "react";
 
 function App() {
-  const [cartItem, setCartItem] = useState<number>(0);
+  const cartItem = 0;
   const dessertDataElement = dessertData.map((data) => {
     return <DessertItem key={data.name} {...data} />;
   });
